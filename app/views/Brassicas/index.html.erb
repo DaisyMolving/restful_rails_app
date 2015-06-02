@@ -6,6 +6,7 @@
       <ul class="brassica">
         <li class="brassica_name"><%= link_to(brassica.name, brassica_path(brassica.id))%></li>  
         <li><%= link_to('DELETE', brassica_path(brassica.id), method: :delete) %></li>
+        <li><%= link_to('EDIT', edit_brassica_path(brassica.id)) %></li>
     </div>
   <% end %>
 </ul>
