@@ -1,1 +1,16 @@
-<h3>here is new</h3>
+<%= form_for @brassica do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :colour %>
+  <%= f.text_field :colour %>
+
+  <%= f.label :average_height %>
+  <%= f.text_field :average_height %>
+
+  <%= f.label :edible %>
+  <%= f.text_field :edible %>
+
+  <%= f.submit 'CREATE BRASSICA' %>
+  
+<% end %>
