@@ -1,11 +1,11 @@
 <h3>WELCOME TO THE EXCITING WORLD OF THE BRASSICA FAMILY</h3>
 
 <ul class="list-group">
-  <% @planets.each do |planet| %>
+  <% @brassicas.each do |brassica| %>
     <div class="list-group-item">
       <ul class="brassica">
         <li class="brassica_name"><%= link_to(brassica.name, brassica_path(brassica.id))%></li>  
-      
+        
     </div>
   <% end %>
 </ul>

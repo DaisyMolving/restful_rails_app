@@ -5,6 +5,11 @@ class BrassicasController < ApplicationController
     @brassicas = Brassica.all
   end
 
+  # this is a GET
+  def show
+    @brassica = Brassica.find(params[:id])
+  end
+
 
 
 end
