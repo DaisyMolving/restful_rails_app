@@ -41,4 +41,9 @@ class BrassicasController < ApplicationController
   end
 
 
+private
+  def brassica_params
+    params.require(:brassica).permit(:name, :colour, :average_height, :edible)
+  end
+
 end
